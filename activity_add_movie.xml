@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.w0274203.assign4_movie.addMovie">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_NewMovies"
+        android:layout_below="@+id/textView_selectAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.Spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Select"
+        android:id="@+id/textView_selectAdd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_EnterName"
+        android:layout_below="@+id/spinner_NewMovies"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/spinner_NewMovies"
+        android:layout_alignEnd="@+id/spinner_NewMovies"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/MovieName"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_EditName"
+        android:layout_below="@+id/textView_EnterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EnterDescription"
+        android:id="@+id/textView_EnterDescription"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/editText_EditName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_EditDescription"
+        style="@android:style/Widget.EditText"
+        android:layout_below="@+id/textView_EnterDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddMovie"
+        android:id="@+id/button_ConfirmAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText_EditDescription"
+        android:layout_alignEnd="@+id/editText_EditDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#5c5c5c"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>
